@@ -1,0 +1,22 @@
+<idea-plugin>
+    <id>jetbrains.language.Custom Language</id>
+    <name>TTML</name>
+    <vendor email="" url="">Ota Nikita</vendor>
+
+    <description><![CDATA[
+    TTML language support for project "Structural documents plugin"
+    ]]></description>
+
+    <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <fileType name="TTML File" implementationClass="jetbrains.language.TTMLFileType"
+                  fieldName="INSTANCE" language="TTML" extensions="ttml"/>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+</idea-plugin>

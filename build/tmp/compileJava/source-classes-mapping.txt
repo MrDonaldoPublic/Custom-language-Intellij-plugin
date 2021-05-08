@@ -1,0 +1,6 @@
+jetbrains/language/TTMLFileType.java
+ jetbrains.language.TTMLFileType
+jetbrains/language/TTMLLanguage.java
+ jetbrains.language.TTMLLanguage
+jetbrains/language/TTMLIcons.java
+ jetbrains.language.TTMLIcons

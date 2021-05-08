@@ -1,0 +1,18 @@
+<idea-plugin>
+  <version>1.0-SNAPSHOT</version>
+  <change-notes>
+      Add change notes here.&lt;br&gt;
+      &lt;em&gt;most HTML tags may be used&lt;/em&gt;</change-notes>
+  <idea-version since-build="211.6693" until-build="211.*"/>
+  <id>jetbrains.language.Custom Language</id>
+  <name>TTML</name>
+  <vendor email="" url="">Ota Nikita</vendor>
+  <description>
+    TTML language support for project "Structural documents plugin"
+    </description>
+  <depends>com.intellij.modules.platform</depends>
+  <extensions defaultExtensionNs="com.intellij">
+    <fileType name="TTML File" implementationClass="jetbrains.language.TTMLFileType" fieldName="INSTANCE" language="TTML" extensions="ttml"/>
+  </extensions>
+  <actions/>
+</idea-plugin>
