@@ -36,7 +36,7 @@ public class TTMLParser implements PsiParser, LightPsiParser {
   }
 
   /* ********************************************************** */
-  // (line '\n')*
+  // (line ('\n' | '\r' | '\r\n'))*
   public static boolean content(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "content")) return false;
     Marker m = enter_section_(b, l, _NONE_, CONTENT, "<content>");
@@ -49,14 +49,24 @@ public class TTMLParser implements PsiParser, LightPsiParser {
     return true;
   }
 
-  // line '\n'
+  // line ('\n' | '\r' | '\r\n')
   private static boolean content_0(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "content_0")) return false;
     boolean r;
     Marker m = enter_section_(b);
     r = line(b, l + 1);
-    r = r && consumeToken(b, "\\n");
+    r = r && content_0_1(b, l + 1);
     exit_section_(b, m, null, r);
+    return r;
+  }
+
+  // '\n' | '\r' | '\r\n'
+  private static boolean content_0_1(PsiBuilder b, int l) {
+    if (!recursion_guard_(b, l, "content_0_1")) return false;
+    boolean r;
+    r = consumeToken(b, "\\n");
+    if (!r) r = consumeToken(b, "\\r");
+    if (!r) r = consumeToken(b, "\\r\\n");
     return r;
   }
 

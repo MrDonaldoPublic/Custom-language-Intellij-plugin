@@ -1,27 +1,25 @@
 jetbrains/language/TTMLFileType.java
  jetbrains.language.TTMLFileType
-jetbrains/language/TTMLLanguage.java
- jetbrains.language.TTMLLanguage
-jetbrains/language/psi/TTMLTokenType.java
- jetbrains.language.psi.TTMLTokenType
-jetbrains/language/TTMLIcons.java
- jetbrains.language.TTMLIcons
-jetbrains/language/psi/TTMLElementType.java
- jetbrains.language.psi.TTMLElementType
 jetbrains/language/psi/TTMLLine.java
  jetbrains.language.psi.TTMLLine
 jetbrains/language/psi/TTMLVisitor.java
  jetbrains.language.psi.TTMLVisitor
-jetbrains/language/psi/impl/TTMLContentImpl.java
- jetbrains.language.psi.impl.TTMLContentImpl
 jetbrains/language/TTMLLexer.java
  jetbrains.language.TTMLLexer
+jetbrains/language/TTMLSyntaxHighlighter.java
+ jetbrains.language.TTMLSyntaxHighlighter
+jetbrains/language/TTMLLanguage.java
+ jetbrains.language.TTMLLanguage
 jetbrains/language/psi/impl/TTMLLineImpl.java
  jetbrains.language.psi.impl.TTMLLineImpl
 jetbrains/language/psi/TTMLMarkup.java
  jetbrains.language.psi.TTMLMarkup
+jetbrains/language/TTMLIcons.java
+ jetbrains.language.TTMLIcons
 jetbrains/language/parser/TTMLParser.java
  jetbrains.language.parser.TTMLParser
+jetbrains/language/psi/TTMLElementType.java
+ jetbrains.language.psi.TTMLElementType
 jetbrains/language/TTMLParserDefinition.java
  jetbrains.language.TTMLParserDefinition
 jetbrains/language/TTMLFile.java
@@ -32,6 +30,12 @@ jetbrains/language/psi/TTMLContent.java
  jetbrains.language.psi.TTMLContent
 jetbrains/language/TTMLLexerAdapter.java
  jetbrains.language.TTMLLexerAdapter
+jetbrains/language/TTMLColorSettingsPage.java
+ jetbrains.language.TTMLColorSettingsPage
+jetbrains/language/psi/TTMLTokenType.java
+ jetbrains.language.psi.TTMLTokenType
+jetbrains/language/TTMLSyntaxHighlighterFactory.java
+ jetbrains.language.TTMLSyntaxHighlighterFactory
 jetbrains/language/psi/TTMLTypes.java
  jetbrains.language.psi.TTMLTypes
  jetbrains.language.psi.TTMLTypes$Factory

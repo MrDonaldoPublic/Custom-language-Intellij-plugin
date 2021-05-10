@@ -14,6 +14,8 @@
   <extensions defaultExtensionNs="com.intellij">
     <fileType name="TTML File" implementationClass="jetbrains.language.TTMLFileType" fieldName="INSTANCE" language="TTML" extensions="ttml"/>
     <lang.parserDefinition language="TTML" implementationClass="jetbrains.language.TTMLParserDefinition"/>
+    <lang.syntaxHighlighterFactory language="TTML" implementationClass="jetbrains.language.TTMLSyntaxHighlighterFactory"/>
+    <colorSettingsPage implementation="jetbrains.language.TTMLColorSettingsPage"/>
   </extensions>
   <actions/>
 </idea-plugin>

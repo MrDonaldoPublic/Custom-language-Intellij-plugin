@@ -14,6 +14,6 @@
 }
 
 start_rule ::= content <<eof>>
-content ::= (line '\n')*
+content ::= (line ('\n' | '\r' | '\r\n'))*
 line ::= (markup | TEXT)*
 markup ::= NORMAL | BOLD | ITALIC | UNDERLINED | STRIKETHROUGH | OTHER
