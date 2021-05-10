@@ -13,6 +13,7 @@
   <depends>com.intellij.modules.platform</depends>
   <extensions defaultExtensionNs="com.intellij">
     <fileType name="TTML File" implementationClass="jetbrains.language.TTMLFileType" fieldName="INSTANCE" language="TTML" extensions="ttml"/>
+    <lang.parserDefinition language="TTML" implementationClass="jetbrains.language.TTMLParserDefinition"/>
   </extensions>
   <actions/>
 </idea-plugin>

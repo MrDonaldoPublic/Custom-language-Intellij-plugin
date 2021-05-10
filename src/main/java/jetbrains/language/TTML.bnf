@@ -1,0 +1,19 @@
+{
+  parserClass="jetbrains.language.parser.TTMLParser"
+
+  extends="com.intellij.extapi.psi.ASTWrapperPsiElement"
+
+  psiClassPrefix="TTML"
+  psiImplClassSuffix="Impl"
+  psiPackage="jetbrains.language.psi"
+  psiImplPackage="jetbrains.language.psi.impl"
+
+  elementTypeHolderClass="jetbrains.language.psi.TTMLTypes"
+  elementTypeClass="jetbrains.language.psi.TTMLElementType"
+  tokenTypeClass="jetbrains.language.psi.TTMLTokenType"
+}
+
+start_rule ::= content <<eof>>
+content ::= (line '\n')*
+line ::= (markup | TEXT)*
+markup ::= NORMAL | BOLD | ITALIC | UNDERLINED | STRIKETHROUGH | OTHER
